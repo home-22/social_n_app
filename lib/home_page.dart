@@ -1,4 +1,4 @@
-import 'package:aaa_aa/page_home.dart';
+import 'package:aaa_aa/details_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -50,17 +50,16 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            // ignore: avoid_print
-                            print('Settings');
+                            debugPrint('Settings');
                           },
                           child: Container(
-                            width: 150,
+                            width: 130,
                             alignment: Alignment.center,
                             padding: const EdgeInsets.all(15),
                             decoration: BoxDecoration(
                               color: Colors.white12,
                               borderRadius: BorderRadius.circular(25),
-                              border: Border.all(width: 2, color: Colors.grey),
+                              border: Border.all(width: 1, color: Colors.grey),
                             ),
                             child: const Text(
                               'Settings',
@@ -80,7 +79,7 @@ class _HomePageState extends State<HomePage> {
               ),
               Positioned(
                 right: 20,
-                bottom: -20,
+                bottom: -30,
                 child: GestureDetector(
                   onTap: () {
                     Navigator.of(context).push(
@@ -141,16 +140,14 @@ class _HomePageState extends State<HomePage> {
                   icon: Icons.star,
                   title: 'Preformance',
                   onPress: () {
-                    // ignore: avoid_print
-                    print('Preformance');
+                    debugPrint('Preformance');
                   },
                 ),
                 _customListTile(
                   icon: Icons.connect_without_contact,
                   title: 'Connections',
                   onPress: () {
-                    // ignore: avoid_print
-                    print('Connections');
+                    debugPrint('Connections');
                   },
                 ),
                 _customListTile(
@@ -166,6 +163,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  // ignore: unused_element
   Widget _customListTile({
     required IconData icon,
     required String title,

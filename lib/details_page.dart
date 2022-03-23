@@ -26,7 +26,8 @@ class PageHome extends StatelessWidget {
                   ),
                   Spacer(),
                   Icon(
-                    Icons.alarm_add,
+                    Icons.timelapse_outlined,
+                    size: 30,
                     color: Colors.black,
                   ),
                   SizedBox(width: 40),
@@ -74,7 +75,7 @@ class PageHome extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                'I am Millie, and i love pets. I am from Worl. I am Millie, and i love pets. I am from Worl.',
+                                'Photography is my passion... and so is my dog.',
                                 style: TextStyle(
                                   color: Colors.grey,
                                 ),
